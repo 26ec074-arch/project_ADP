@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Registration Form</title>
+  <style>
+    body {
+      background-color: #e6f2ff;
+      font-family: Arial, sans-serif;
+    }
+    table {
+      background-color: #ffffff;
+      border: 2px solid #003366;
+      padding: 20px;
+      margin-top: 30px;
+    }
+    h2 {
+      color: #003366;
+    }
+    td {
+      padding: 8px;
+    }
+    input[type="submit"], input[type="reset"] {
+      background-color: #003366;
+      color: white;
+      padding: 8px 16px;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <center>
+    <h2>Registration Form</h2>
+
+    <form action="" method="post">
+      <table>
+        <tr>
+          <td>First Name:</td>
+          <td><input type="text" name="fname" required></td>
+        </tr>
+        <tr>
+          <td>Last Name:</td>
+          <td><input type="text" name="lname" required></td>
+        </tr>
+        <tr>
+          <td>Email ID:</td>
+          <td><input type="email" name="email" required></td>
+        </tr>
+        <tr>
+          <td>Mobile Number:</td>
+          <td><input type="tel" name="mobile" maxlength="10" required></td>
+        </tr>
+        <tr>
+          <td>Gender:</td>
+          <td>
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female
+          </td>
+        </tr>
+        <tr>
+          <td>Date of Birth:</td>
+          <td><input type="date" name="dob"></td>
+        </tr>
+        <tr>
+          <td>Course:</td>
+          <td>
+            <select name="course">
+              <option value="">--Select--</option>
+              <option value="bca">BCA</option>
+              <option value="bsc">B.Sc Computer Science</option>
+              <option value="btech">B.Tech</option>
+              <option value="mca">MCA</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Address:</td>
+          <td><textarea name="address" rows="3" cols="22"></textarea></td>
+        </tr>
+        <tr>
+          <td>Password:</td>
+          <td><input type="password" name="password" required></td>
+        </tr>
+        <tr>
+          <td colspan="2" align="center">
+            <br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+          </td>
+        </tr>
+      </table>
+    </form>
+  </center>
+
+</body>
+</html>
+
